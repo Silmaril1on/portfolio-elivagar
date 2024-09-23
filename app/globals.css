@@ -1,27 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: rgba(252, 245, 223, 0.95);
+  font-family: teko;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .center {
+    @apply flex items-center justify-center;
+  }
+  .gold-text {
+    @apply text-gold uppercase font-primary;
+  }
+}
+
+@layer utilities {
+  .masky {
+    mask-image: url("/assets/masky.png");
+    mask-size: 2600% 100%;
+    mask-position: 100% 0;
+    animation: mordor 2s;
+    animation-timing-function: steps(24);
+    will-change: transform;
+  }
+
+  @keyframes mordor {
+    0% {
+      mask-position: 0 0;
+    }
+    100% {
+      mask-position: 100% 0;
+    }
   }
 }

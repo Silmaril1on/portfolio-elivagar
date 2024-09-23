@@ -8,8 +8,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        cream: "rgba(252,245,223,.95)",
+        gold: "#fcb913",
+      },
+      fontFamily: {
+        primary: "teko",
+        secondary: "josefin slab",
+        tetriary: "courier prime",
       },
     },
   },
