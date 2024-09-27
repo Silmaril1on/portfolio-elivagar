@@ -14,16 +14,13 @@ const Circle = () => {
       variants={fromTop}
       initial="hidden"
       animate="visible"
-      className="fixed w-full left-0 center -top-16"
-      transform="scaleX(-1)"
+      className="fixed w-full center left-0 top-[500px] xl:left-0 xl:-top-16"
     >
       <motion.svg
         style={{ rotate }}
-        className="origin-center font-light pointer-events-none"
+        className="origin-center font-light pointer-events-none w-[90px] xl:w-[120px] h-[90px] xl:h-[120px] absolute xl:static -left-14"
         fill="currentColor"
         viewBox="0 0 100 100"
-        width="120"
-        height="120"
       >
         <defs>
           <path

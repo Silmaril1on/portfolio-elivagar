@@ -28,7 +28,7 @@ const Loading = ({ setLoadTime }) => {
           exit={{ opacity: 0, y: -50 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-[450px] leading-[350px] absolute left-0 -bottom-14">
+          <h1 className="text-[250px] xl:text-[450px] leading-[350px] absolute left-0 -bottom-14">
             {count}...
           </h1>
 

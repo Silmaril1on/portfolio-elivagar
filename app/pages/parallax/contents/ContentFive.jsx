@@ -71,7 +71,7 @@ export const ContentFive = () => {
               return (
                 <div
                   key={index}
-                  className="center px-7 space-x-2 flex-row text-3xl hover:bg-cream hover:text-black duration-500 h-full py-4 capitalize  hover:cursor-default"
+                  className="center px-4 py-2 xl:py-4 xl:px-7 space-x-2 flex-row text-lg xl:text-3xl hover:bg-cream hover:text-black duration-500 h-full  capitalize  hover:cursor-default"
                 >
                   <span>{item.icon}</span>
                   <h1>{item.name}</h1>
@@ -89,7 +89,7 @@ export const ContentFive = () => {
               return (
                 <div
                   key={index}
-                  className="center px-7 space-x-2 flex-row text-3xl hover:bg-cream hover:text-black duration-500 h-full py-4 capitalize  hover:cursor-default"
+                  className="center px-4 py-2 xl:py-4 xl:px-7 space-x-2 flex-row text-lg xl:text-3xl hover:bg-cream hover:text-black duration-500 h-full  capitalize  hover:cursor-default"
                 >
                   <span>{item.icon}</span>
                   <h1>{item.name}</h1>
@@ -125,7 +125,7 @@ const Duplicate = () => {
             return (
               <div
                 key={index}
-                className="center px-7 space-x-2 flex-row text-3xl hover:bg-cream hover:text-black duration-500 h-full py-4 capitalize  hover:cursor-default"
+                className="center px-4 py-2 xl:py-4 xl:px-7 space-x-2 flex-row text-lg xl:text-3xl hover:bg-cream hover:text-black duration-500 h-full  capitalize  hover:cursor-default"
               >
                 <span>{item.icon}</span>
                 <h1>{item.name}</h1>
@@ -143,7 +143,7 @@ const Duplicate = () => {
             return (
               <div
                 key={index}
-                className="center px-7 space-x-2 flex-row text-3xl hover:bg-cream hover:text-black duration-500 h-full py-4 capitalize  hover:cursor-default"
+                className="center px-4 py-2 xl:py-4 xl:px-7 space-x-2 flex-row text-lg xl:text-3xl hover:bg-cream hover:text-black duration-500 h-full  capitalize  hover:cursor-default"
               >
                 <span>{item.icon}</span>
                 <h1>{item.name}</h1>

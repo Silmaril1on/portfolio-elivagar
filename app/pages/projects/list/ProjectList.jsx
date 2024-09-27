@@ -72,7 +72,7 @@ const ProjectList = () => {
             key={index}
             ref={(el) => (btnRefs.current[index] = el)}
             style={{ y: translateYValues[index] }}
-            className="w-[50%] sticky h-[500px] top-[200px] bg-neutral-800 rounded-t-xl overflow-hidden cursor-none"
+            className="w-[78%] xl:w-[50%] sticky h-[500px] top-[200px] bg-neutral-800 rounded-t-xl overflow-hidden cursor-none"
           >
             <a href={item.link} className="cursor-none" target="_blank">
               <Header item={item} />

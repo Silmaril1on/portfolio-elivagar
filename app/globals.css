@@ -17,6 +17,18 @@ body {
   font-family: teko;
 }
 
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(252, 245, 223, 0.95);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fcb913;
+}
+
 @layer utilities {
   .center {
     @apply flex items-center justify-center;
@@ -43,5 +55,25 @@ body {
     100% {
       mask-position: 100% 0;
     }
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .spin-slow {
+    animation: spin 50s linear infinite;
+  }
+  .spin-medium {
+    animation: spin 20s linear infinite;
+  }
+
+  .spin {
+    animation: spin 10s linear infinite;
   }
 }

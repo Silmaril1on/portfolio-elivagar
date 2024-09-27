@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import Navigation from "../navigation/Navigation";
 import Parallax from "../parallax/Parallax";
 import Projects from "../projects/Projects";
+import Painting from "../painting/Painting";
+import Footer from "../footer/Footer";
 
 const MainPage = () => {
   return (
@@ -15,6 +17,8 @@ const MainPage = () => {
       <Navigation />
       <Parallax />
       <Projects />
+      <Painting />
+      <Footer />
     </motion.section>
   );
 };

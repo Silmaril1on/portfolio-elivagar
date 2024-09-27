@@ -7,7 +7,7 @@ import ContentTwo from "./contents/ContentTwo";
 
 const ParallaxContent = () => {
   return (
-    <div className="mx-auto w-full px-5 pt-[200px] relative">
+    <div className="mx-auto w-full px-2 xl:px-5 pt-[200px] relative">
       <Content start={-200} end={200}>
         <ContentOne />
       </Content>

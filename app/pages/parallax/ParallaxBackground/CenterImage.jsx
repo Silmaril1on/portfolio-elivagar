@@ -1,38 +1,36 @@
 "use client";
-import {
-  useMotionTemplate,
-  useScroll,
-  useTransform,
-  motion,
-} from "framer-motion";
-import CanvasAnimation from "./CanvasAnimation";
+import { useScroll, useTransform, motion } from "framer-motion";
+import Image from "next/image";
 
 const CenterImage = ({ heightData }) => {
-  const { scrollY } = useScroll();
-
-  const clip1 = useTransform(scrollY, [0, 1500], [25, 0]);
-  const clip2 = useTransform(scrollY, [0, 1500], [75, 100]);
-
-  const clipPath = useMotionTemplate`polygon(${clip1}% ${clip1}%, ${clip2}% ${clip1}%, ${clip2}% ${clip2}%, ${clip1}% ${clip2}%)`;
-
-  const backgroundSize = useTransform(
-    scrollY,
-    [0, heightData + 500],
-    ["170%", "100%"]
+  const { scrollYProgress } = useScroll();
+  const opacity = useTransform(
+    scrollYProgress,
+    [heightData, heightData + 500],
+    [1, 0]
   );
-  const opacity = useTransform(scrollY, [heightData, heightData + 500], [1, 0]);
+
+  const scale = useTransform(scrollYProgress, [0, 1], ["75%", "200%"]);
 
   return (
-    <motion.div
-      className="sticky top-0 h-screen w-full"
-      style={{
-        clipPath,
-        backgroundSize,
-        opacity,
-      }}
-    >
-      <CanvasAnimation />
-    </motion.div>
+    <div className="overflow-hidden sticky top-0">
+      <motion.div
+        className="h-screen w-full"
+        style={{
+          scale,
+          opacity,
+        }}
+      >
+        <Image
+          className="w-full h-full object-auto"
+          src="/assets/rocks.webp"
+          alt="surati"
+          width={1900}
+          height={1900}
+          quality={100}
+        />
+      </motion.div>
+    </div>
   );
 };
 

@@ -1,14 +1,14 @@
 import HeaderAnimation from "@/app/components/HeaderAnimation";
 
-const ProjectHeadline = () => {
+const TestimonialHeadline = () => {
   return (
-    <div className="sticky top-[100px]">
+    <div className="sticky top-[200px]">
       <HeaderAnimation
-        text="recent projects"
+        text="testimonials"
         className="text-5xl xl:text-7xl uppercase"
       />
     </div>
   );
 };
 
-export default ProjectHeadline;
+export default TestimonialHeadline;

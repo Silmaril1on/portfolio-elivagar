@@ -22,7 +22,7 @@ const Navigation = () => {
     <nav
       className={`${
         isStuck ? "w-full py-5" : "w-[90%] py-6"
-      } flex flex-row items-center justify-between bg-black backdrop-blur-lg mt-10 sticky px-10 top-0 z-[5] duration-300`}
+      } flex flex-row items-start justify-between bg-black  mt-10 sticky px-2 xl:px-10 top-0 z-[5] duration-300`}
     >
       {!isStuck && <BorderSvg />}
       <CurrentTime />

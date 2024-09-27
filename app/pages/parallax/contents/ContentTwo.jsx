@@ -36,7 +36,7 @@ const someData = [
 
 const ContentTwo = () => {
   return (
-    <div className="w-[330px] ml-[38%] relative hover:rounded-3xl">
+    <div className="w-[200px] xl:w-[330px] ml-[23%] xl:ml-[38%] relative hover:rounded-3xl">
       <BorderSvg />
       <Image
         className="h-full w-full brightness-75"
@@ -50,7 +50,7 @@ const ContentTwo = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ margin: "-100px", once: true }}
-        className="absolute bottom-14 bg-stone-800 font-tetriary p-2 text-[12px] -right-[32%] w-44 h-44"
+        className="absolute bottom-[6%] bg-stone-800 font-tetriary p-2 text-[8px] xl:text-[12px] -right-[32%]"
       >
         <BorderSvg />
         <span className="text-amber-600">.some-info {`{`} </span>
