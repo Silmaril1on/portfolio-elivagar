@@ -9,7 +9,7 @@ const Painting = () => {
       <CardsHeader />
       <CardContainer />
       <Light />
-      <div className="absolute inset-0 bg-gradient-to-t from-black to-30% z-[2]"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black to-30%"></div>
     </section>
   );
 };

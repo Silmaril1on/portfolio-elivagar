@@ -29,7 +29,7 @@ const CardsHeader = () => {
       <>
         {splitText[0]}
         {splitText.length > 1 && (
-          <span className="font-primary font-bold mix-blend-difference relative z-[4] pointer-events-none">
+          <span className="font-primary font-bold mix-blend-difference pointer-events-none">
             PENUP
           </span>
         )}
@@ -39,13 +39,13 @@ const CardsHeader = () => {
   };
 
   return (
-    <div className="absolute w-80 h-44 left-0 bottom-5 z-[4] flex flex-col justify-between items-start pl-3 overflow-hidden">
+    <div className="absolute w-80 h-44 left-0 bottom-5 flex flex-col justify-between items-start pl-3 overflow-hidden">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.5 }}
-        className="text-base font-light font-secondary"
+        className="text-base font-light font-secondary relative z-[2]"
       >
         {renderTextWithPENUP(displayedText)}
       </motion.p>
