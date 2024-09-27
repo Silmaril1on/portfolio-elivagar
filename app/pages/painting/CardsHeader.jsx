@@ -39,7 +39,7 @@ const CardsHeader = () => {
   };
 
   return (
-    <div className="absolute w-80 h-44 left-0 bottom-5 flex flex-col justify-between items-start pl-3 overflow-hidden">
+    <div className="absolute w-80 h-44 left-0 bottom-5 z-[4] flex flex-col justify-between items-start pl-3 overflow-hidden">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
