@@ -18,8 +18,7 @@ export default function Home() {
 
   return (
     <main className="relative center flex-col">
-      {/* {loadTime ? <Loading setLoadTime={setLoadTime} /> : <MainPage />} */}
-      <MainPage />
+      {loadTime ? <Loading setLoadTime={setLoadTime} /> : <MainPage />}
     </main>
   );
 }

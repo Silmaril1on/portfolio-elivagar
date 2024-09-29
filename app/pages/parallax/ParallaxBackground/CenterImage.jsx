@@ -23,11 +23,12 @@ const CenterImage = ({ heightData }) => {
       >
         <Image
           className="w-full h-full object-auto"
-          src="/assets/rocks.webp"
+          src="/assets/rocks.png"
           alt="surati"
           width={1900}
           height={1900}
           quality={100}
+          priority
         />
       </motion.div>
     </div>

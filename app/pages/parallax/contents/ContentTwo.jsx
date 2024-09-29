@@ -1,7 +1,7 @@
 import BorderSvg from "@/app/components/BorderSvg";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { staggerOpacity } from "@/app/framer/motionvalues";
+import AvatarImage from "./AvatarImage";
 
 const someData = [
   {
@@ -38,19 +38,13 @@ const ContentTwo = () => {
   return (
     <div className="w-[200px] xl:w-[330px] ml-[23%] xl:ml-[38%] relative hover:rounded-3xl">
       <BorderSvg />
-      <Image
-        className="h-full w-full brightness-75"
-        src="/assets/me.jpg"
-        width={400}
-        height={400}
-        alt="me"
-      />
+      <AvatarImage />
       <motion.div
         variants={staggerOpacity}
         initial="hidden"
         whileInView="visible"
         viewport={{ margin: "-100px", once: true }}
-        className="absolute bottom-[6%] bg-stone-800 font-tetriary p-2 text-[8px] xl:text-[12px] -right-[32%]"
+        className="absolute bottom-[6%] bg-stone-800 font-tetriary z-[3] p-2 text-[8px] xl:text-[12px] -right-[32%]"
       >
         <BorderSvg />
         <span className="text-amber-600">.some-info {`{`} </span>
