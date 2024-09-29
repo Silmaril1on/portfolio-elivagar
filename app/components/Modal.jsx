@@ -13,7 +13,6 @@ const Modal = ({ setIsOpen }) => {
             className="text-3xl hover:text-xl duration-500 cursor-pointer"
           />
         </div>
-        <BorderSvg />
         <div className="pl-3">
           <HeaderAnimation
             text="hello user"
