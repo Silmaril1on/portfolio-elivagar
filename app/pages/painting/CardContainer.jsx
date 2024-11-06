@@ -40,7 +40,7 @@ const CardContainer = () => {
         rotate="6deg"
         top="16%"
         left="47%"
-        className="w-80"
+        className="w-64"
       />
     </div>
   );
