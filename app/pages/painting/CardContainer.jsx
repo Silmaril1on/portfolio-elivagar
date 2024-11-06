@@ -33,6 +33,15 @@ const CardContainer = () => {
         left="40%"
         className="w-80"
       />
+      <Card
+        containerRef={containerRef}
+        src="/assets/paint4.jpg"
+        alt="Example image"
+        rotate="6deg"
+        top="16%"
+        left="47%"
+        className="w-80"
+      />
     </div>
   );
 };
