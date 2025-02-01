@@ -10,11 +10,11 @@ const ContentOne = () => {
         <HeaderAnimation text="CHIKOVANI" className="font-primary text-5xl" />
         <div className="flex w-full flex-col xl:flex-row">
           <div className="flex flex-row space-x-1 xl:space-x-0 xl:flex-col gold-text *:leading-3 xl:pt-1">
-            <h1>front</h1>
-            <h1>end</h1>
+            <h1>MERN</h1>
+            <h1>STACK</h1>
           </div>
           <h1 className="text-[26px] xl:text-3xl font-secondary xl:pl-2">
-            WEB DEVELOPER
+            DEVELOPER
           </h1>
         </div>
       </article>

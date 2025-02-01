@@ -26,6 +26,10 @@ import middle1 from "../../public/assets/middle1.jpg";
 import middle2 from "../../public/assets/middle2.jpg";
 import middle3 from "../../public/assets/middle3.jpg";
 import middle4 from "../../public/assets/middle4.jpg";
+import imdb1 from "../../public/assets/imdb-1.jpg";
+import imdb2 from "../../public/assets/imdb-2.jpg";
+import imdb3 from "../../public/assets/imdb-3.jpg";
+import imdb4 from "../../public/assets/imdb-4.jpg";
 
 const projectsData = [
   {
@@ -35,10 +39,16 @@ const projectsData = [
     link: "https://www.brid.me",
   },
   {
+    id: 11,
+    name: "IMDb Page Project",
+    images: [imdb1, imdb2, imdb3, imdb4],
+    link: "https://gb-gamebase.netlify.app/",
+  },
+  {
     id: 1,
     name: "GameBase",
     images: [gamebase, gamebas2, gamebase3, gamebase4],
-    link: "https://gb-gamebase.netlify.app/",
+    link: "https://imdb-elivagar.vercel.app/",
   },
   {
     id: 2,

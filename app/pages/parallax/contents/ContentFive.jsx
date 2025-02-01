@@ -1,5 +1,5 @@
-import { FaReact, FaSass } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiRedux } from "react-icons/si";
+import { FaReact, FaSass, FaNode } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiRedux, SiMongodb } from "react-icons/si";
 import { IoLogoFirebase, IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
@@ -46,6 +46,14 @@ const data = [
   {
     name: "framer motion",
     icon: <TbBrandFramerMotion />,
+  },
+  {
+    name: "Node.js",
+    icon: <FaNode />,
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb />,
   },
 ];
 
