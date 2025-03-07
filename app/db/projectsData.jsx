@@ -30,6 +30,10 @@ import imdb1 from "../../public/assets/imdb-1.jpg";
 import imdb2 from "../../public/assets/imdb-2.jpg";
 import imdb3 from "../../public/assets/imdb-3.jpg";
 import imdb4 from "../../public/assets/imdb-4.jpg";
+import djdb1 from "../../public/assets/djdb-1.jpg";
+import djdb2 from "../../public/assets/djdb-2.jpg";
+import djdb3 from "../../public/assets/djdb-3.jpg";
+import djdb4 from "../../public/assets/djdb-4.jpg";
 
 const projectsData = [
   {
@@ -79,6 +83,12 @@ const projectsData = [
     name: "middle earth project",
     images: [middle2, middle1, middle3, middle4],
     link: "https://tolkien-page.netlify.app/",
+  },
+  {
+    id: 7,
+    name: "DJDB / ElectronicMusic",
+    images: [djdb1, djdb2, djdb3, djdb4],
+    link: "https://djdb.vercel.app/",
   },
 ];
 

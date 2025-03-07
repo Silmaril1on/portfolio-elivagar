@@ -79,7 +79,7 @@ const ProjectList = () => {
               <ProjectImages item={item} />
               {hoveredIndex === index && (
                 <span
-                  ref={(spanEl) => (btnRefs.current[index].spanRef = spanEl)} // Assign span ref for each project
+                  ref={(spanEl) => (btnRefs.current[index].spanRef = spanEl)}
                   className="absolute pointer-events-none h-20 w-20 rounded-full text-black text-center center bg-cream/30 top-1/2 left-1/2 uppercase -translate-x-1/2 z-10 -translate-y-1/2"
                 >
                   {" "}
